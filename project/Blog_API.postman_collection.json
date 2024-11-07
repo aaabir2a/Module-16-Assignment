@@ -1,0 +1,82 @@
+{
+  "info": {
+    "name": "Blog API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Blog",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/create-blog",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "create-blog"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"Sample Blog\",\n    \"content\": \"This is a sample blog post.\",\n    \"author\": \"John Doe\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Read Blog",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/read-blog",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "read-blog"]
+        }
+      }
+    },
+    {
+      "name": "Update Blog",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/update-blog",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "update-blog"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 1,\n    \"title\": \"Updated Blog\",\n    \"content\": \"This is an updated blog post.\",\n    \"author\": \"John Doe\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Delete Blog",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/delete-blog",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "delete-blog"]
+        }
+      }
+    }
+  ]
+}
